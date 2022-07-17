@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body>
+
+
+  <!-- intro section  -->
+  <div>
+    <div>
+
+      <nav class="container flex bg-white w-screen pt-5 pb-2 pl-7 fixed z-10 justify-between items-center">
+        <div class="icon">
+          <img src="./images/logo.svg" alt="huehue" class="h-auto w-36 xl:ml-6">
+        </div>
+
+        <div class="nav-links flex gap-4 pr-7 xl:gap-12 xl:pr-24">
+          <div class="cursor-pointer transition duration-150 ease-linear delay-50 hover:scale-110"><a href="#">Features</a></div>
+          <div class="cursor-pointer transition duration-150 ease-linear delay-50 hover:scale-110"><a href="#">Team</a></div>
+          <div class="cursor-pointer transition duration-150 ease-linear delay-50 hover:scale-110"><a href="#">Sign-In</a></div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container w-full grid grid-cols-1 lg:grid-cols-2">
+
+      <div class="img-wrapper w-full lg:order-last container">
+        <img class="pt-36 w-full" src="./images/illustration-1.svg" alt="">
+      </div>
+      <div class="text-wrapper lg:w-full lg:pt-36">
+
+        <heading class="px-5 text-center lg:text-left">
+          <h1 class="text-4xl xl:text-6xl px-5 font-bold xl:ml-12">All your files in one secure location, accessible anywhere.</h1>
+
+
+          <p class="text-lg lg:text-xl pt-8 text-slate-900 leading-8 px-5 xl:ml-12">Fylo stores your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family, and co-workers.</p>
+        </heading>
+
+        <div class="mx-auto container">
+          <div class="mb-10 mx-auto w-3/4 xl:flex xl:ml-16">
+            <div class="pb-5 xl:pb-0 xl:pr-5">
+              <input type="email" class="transition duration-300 ease-linear delay-100 hover:scale-110 h-9 min-w-xs xl:w-80 ring-1 w-full p-1 rounded" placeholder="Enter Your E-Mail">
+            </div>
+            <div class="">
+              <button class="hover:animate-pulse transition duration-300 ease-linear delay-100 hover:scale-110 xl:px-8 shadow-xl min-w-xs w-full text-center bg-blue-500 text-white font-semibold text-lg rounded py-1.5 hover:bg-blue-100 hover:ring-1 hover:text-blue-600 " type="submit">Get Started</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- curve -->
+  <div>
+    <img src="./images/bg-curve-desktop.svg" alt="curve" class="mt-28 w-screen h-auto hidden lg:block">
+  </div>
+  <div>
+    <img src="./images/bg-curve-mobile.svg" alt="curve" class="mt-24 w-screen h-auto lg:hidden ">
+  </div>
+
+
+  <!-- mid-section -->
+  <section class="container pb-20 grid grid-cols-1 lg:grid-cols-2  bg-[#f6f6fe]">
+    <div class="container img-wrapper lg:order-2">
+      <img src="./images/illustration-2.svg" class="h-full w-full w- px-7 object-contain" alt="illustration-2">
+    </div>
+
+    <div>
+
+
+      <div class="textMid text-center lg:text-left lg:pl-12 pt-28">
+        <h1 class="lg:text-4xl text-2xl mx-1 lg:mx-0 font-semibold text-slate-900 mb-5"> Stay productive, wherever you are</h1>
+        <p class="text-left lg:leading-8 lg:text-xl leading-7 text-lg pt-3 px-4 lg:px-0 mb-3 text-gray-600">Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.</p>
+
+        <p class="text-left lg:leading-8 lg:text-xl leading-7 text-lg pt-3 px-4 lg:px-0 text-gray-600">Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!</p>
+
+      </div>
+
+      <div class="testimonials flex flex-col items-center lg:items-start lg:pl-12  mt-12">
+        <div class="transition ease-in-out hover:scale-110 duration-300 transform hover:-translate-y-1 w-fit flex-col mb-10 space-y-2 p-3 rounded-xl hover:bg-emerald-100">
+          <div class="flex items-center cursor-pointer">
+            <h1 class=" flex-1 text-xl font-medium text-teal-600 pr-2">See how fylo works</h1>
+            <img src="./images/icon-arrow.svg" alt="a" class="w-auto h-8">
+          </div>
+          <div class="h-0.5 rounded w-full bg-teal-600"></div>
+        </div>
+
+        <div class="p-10 mb-5 bg-white card max-w-sm lg:max-w-lg h-auto  w-3/4 rounded-md shadow-lg">
+          <div class=""><img class="mb-3 w-auto h-6" src="./images/icon-quotes.svg" alt=""></div>
+          <div>
+            <h1 class="text-xl font-semibold text-gray-700">Fylo has improved our team productivity by an order of magnitude. Since
+              making the switch our team has become a well-oiled collaboration machine.</h1>
+          </div>
+          <div class="person mt-8 flex gap-5 align-center">
+            <div class="avatar"><img class="rounded-full w-auto h-12" src="./images/avatar-testimonial.jpg" alt=""></div>
+            <div class="avatar-details">
+              <h1 class="font-bold text-slate-900">Kyle Burton</h1>
+              <h3 class="text-gray-500">Founder & CEO, Huddle</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="false-footer bg-[#585989] flex flex-col gap-7 items-center py-16 px-8 lg:flex-row">
+    <div class="lg:ml-20">
+      <h1 class="text-white font-bold text-3xl text-center mb-6 lg:text-left">Get early access today</h1>
+      <p class="text-white opacity-90 text-lg leading-7 text-center lg:text-left">It only takes a minute to sign up and our free starter tier is extremely generous. 
+        If you have any questions, our support team would be happy to help you.
+      </p>
+    </div>
+      <div class="mx-auto container">
+        <div class=" mx-auto w-3/4 xl:flex xl:flex-col xl:gap-4 xl:ml-16">
+          <div class="pb-5 xl:pb-0 xl:pr-5">
+            <input type="email" class="transition duration-300 ease-linear delay-100 hover:scale-110 text-center xl:text-left h-9 min-w-xs xl:p-2 xl:w-80 ring-1 w-full p-1 rounded" placeholder="Enter Your E-Mail">
+          </div>
+          <div class="">
+            <button class="hover:animate-pulse transition duration-300 ease-linear delay-100 hover:scale-110 shadow-xl min-w-xs w-full xl:w-48  bg-blue-500 text-white font-semibold py-1 xl:font-medium text-lg rounded hover:bg-blue-100 hover:ring-1 hover:text-blue-600 xl:py-2" type="submit"><h1>Get Started For Free</h1></button>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+  <footer class="bg-[#070439] text-white grid grid-cols-1 py-16 px-10 gap-16 md:grid-cols-2 xl:grid-cols-4">
+    
+    <div class="child-1">
+
+      <div class="mb-7">
+        <div><svg width="166" height="49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M.014.03h93.96v48.29H.015z"/></defs><g fill="none" fill-rule="evenodd"><path d="M0 14.13v.123l27.95 13.13L56 14.209v-.033L27.95 1 0 14.13zm10.077.062L27.95 5.795l17.877 8.397-17.877 8.396-17.874-8.396zM27.95 32.483L0 19.55v4.784l27.95 12.964L56 24.289v-4.784L27.95 32.483zm0 9.703L0 29.25v4.783L27.95 47 56 33.99v-4.784l-28.05 12.98z" fill="#fff"/><g transform="translate(72)"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path d="M87.56 24.152a8.1 8.1 0 0 0-2.161-5.573 7.259 7.259 0 0 0-2.34-1.673 6.864 6.864 0 0 0-2.85-.601c-1.01 0-1.961.2-2.852.601a7.257 7.257 0 0 0-2.34 1.673 8.102 8.102 0 0 0-2.16 5.574 8.102 8.102 0 0 0 2.16 5.573 7.257 7.257 0 0 0 2.34 1.672 6.864 6.864 0 0 0 2.851.602c1.01 0 1.96-.2 2.852-.602a7.259 7.259 0 0 0 2.339-1.672 8.1 8.1 0 0 0 2.16-5.574zm6.415 0c0 1.932-.357 3.723-1.07 5.373a13.098 13.098 0 0 1-2.94 4.28c-1.247 1.205-2.71 2.156-4.388 2.854-1.678.699-3.468 1.048-5.369 1.048-1.9 0-3.683-.349-5.346-1.048a13.863 13.863 0 0 1-4.366-2.876 13.351 13.351 0 0 1-2.94-4.302c-.713-1.65-1.07-3.426-1.07-5.329 0-1.873.364-3.634 1.092-5.284a13.92 13.92 0 0 1 2.962-4.325 13.671 13.671 0 0 1 4.367-2.898 13.552 13.552 0 0 1 5.301-1.048c1.901 0 3.69.35 5.369 1.048 1.678.698 3.14 1.65 4.388 2.854 1.248 1.204 2.228 2.638 2.94 4.302.713 1.665 1.07 3.449 1.07 5.351zM64.258 36.905a8.6 8.6 0 0 1-1.715.58c-.638.148-1.3.222-1.982.222a9.84 9.84 0 0 1-2.74-.379 6.003 6.003 0 0 1-2.295-1.226c-.653-.565-1.173-1.3-1.56-2.207-.385-.907-.578-2-.578-3.277V.029h6.549v29.474c0 1.07.215 1.806.646 2.207.43.401.943.602 1.537.602.742 0 1.455-.223 2.138-.669v5.262zM50.492 11.22L38.908 41.854c-.861 2.289-1.99 3.939-3.386 4.95-1.396 1.01-3.06 1.515-4.99 1.515-.297 0-.623-.022-.98-.066a7.352 7.352 0 0 1-1.025-.201l-2.138-5.975a8.486 8.486 0 0 0 1.56.557c.534.134 1.039.201 1.514.201 1.01 0 1.93-.23 2.762-.691.832-.46 1.47-1.315 1.916-2.564l.891-2.586-9.935-25.773h6.995l5.925 16.588 5.57-16.588h6.905zM23.538 7.342H6.786v8.294h16.529v5.618H6.785v15.784H.015V1.412h23.524v5.93z" fill="#fff" mask="url(#b)"/></g></g></svg></div>
+      </div>
+      <div class="details-1">
+        <div class="flex gap-7 items-center mb-2">
+          <div><img src="./images/icon-phone.svg" alt=""></div>
+          <div><h1>Phone : +1-543-123-4567</h1></div>
+        </div>
+
+        <div class="flex mt-3 gap-7 items-center">
+          <div><img class="" src="./images/icon-email.svg" alt=""></div>
+          <div><h1>Yuvrajsingh@fylo.com</h1></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="child-2">
+      <ul class="space-y-3">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="child-3">
+      <ul class="space-y-3">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+
+    <div class="child-4 flex justify-center container gap-5 md:flex-col">
+      <div class="transition duration-150 ease-linear delay-50 hover:scale-110 transform hover:translate-x-3"><a href="#"><img class="h-10 w-10" src="./images/twitter-svgrepo-com.svg" alt=""></a></div>
+      <div class="transition duration-150 ease-linear delay-50 hover:scale-110 transform hover:translate-x-3"><a href="https://www.instagram.com/yuwuxj/"><img class="h-10 w-10" src="./images/instagram-svgrepo-com.svg" alt=""></a></div>
+      <div class="transition duration-150 ease-linear delay-50 hover:scale-110 transform hover:translate-x-3"><a href="https://www.linkedin.com/in/yuvraj-singh-b05323216/"><img class="h-10 w-10" src="./images/linkedin-svgrepo-com.svg" alt=""></a></div>
+    </div>
+
+  </footer>
+ 
+</body>
+
+</html>
